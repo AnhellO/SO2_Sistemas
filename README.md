@@ -1,1 +1,1 @@
-Hola clase de SO2!
+**Hola clase de SO2!**
