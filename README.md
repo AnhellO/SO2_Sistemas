@@ -4,7 +4,7 @@ Repositorio para las prácticas, proyectos y examenes de la materia de Sistemas 
 
 ## Comenzando
 
-- Crea tu fork del repositorio, clonalo (`git clone https://github.com/AnhellO/DAS_Sistemas.git`), y comienza con la talacha
+- Crea tu fork del repositorio, clonalo (`git clone https://github.com/AnhellO/SO2_Sistemas.git`), y comienza con la talacha
 
 ## Prerequisitos
 
@@ -15,9 +15,9 @@ Repositorio para las prácticas, proyectos y examenes de la materia de Sistemas 
 ## Contribución
 
 - Manda todos tus Pull Requests a la `develop` branch para revisión. Una vez que fueron aceptados, mandalos a `master`
-  - Los PRs a `development` y a `master` tienen que llamarse de la siguiente forma: `DAS_Sistemas {Branch} Push: {Cambios Principales}`
+  - Los PRs a `development` y a `master` tienen que llamarse de la siguiente forma: `SO2_Sistemas {Branch} Push: {Cambios Principales}`
   - Si estás actualizando de una branch a otra, los PRs tienen que llamarse de la siguiente manera: `Updating {Branch} from {Branch}`
-  - Algunos ejemplos de los dos puntos anteriores [aquí](https://github.com/AnhellO/DAS_Sistemas/pulls?q=is%3Apr+is%3Aclosed)
+  - Algunos ejemplos de los dos puntos anteriores [aquí](https://github.com/AnhellO/SO2_Sistemas/pulls)
 - Todos tus cambios deben de ir con la siguiente ruta: `repo/{carpeta-semestre}/{carpeta-alumno}/{carpeta-práctica-#}/`, donde:
   - `{carpeta-semestre}` es creada de parte del maestro al comienzo de cada semestre
   - `{carpeta-alumno}` debe de tener la forma `Primer-Nombre Primer-Apellido` ej. `/Juanito Banana/`
