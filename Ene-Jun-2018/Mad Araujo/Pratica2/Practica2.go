@@ -4,7 +4,8 @@ import("bufio"
     "fmt"
     "os"
     "strings"
-    "strconv")
+    "strconv"
+    "io/ioutil")
 
 func main(){
 reader := bufio.NewReader(os.Stdin) // para capturar string
@@ -22,6 +23,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout.Close()
 			fout.WriteString("Escogiste solo crear 1\r\n") 
+			//lee archivo
+			b, err := ioutil.ReadFile("Archivo.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			str := string(b) // convierto de byts a string
+    			fmt.Println(str) // imprimo lo leido
          }
 
          if z_entero == 2 {				//condicional para crear 2 archivo
@@ -34,6 +42,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout.Close()
 			fout.WriteString("Este es el Pirmer Archivo\r\n") 
+			//lee archivo
+			b, err := ioutil.ReadFile("Archivo1.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			str := string(b) // convierto de byts a string
+    			fmt.Println(str) // imprimo lo leido
          //creamos archivo2
          userFile2 := "Archivo2.txt"
 		fout2, err := os.Create(userFile2)		
@@ -43,6 +58,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout2.Close()
 			fout2.WriteString("Este es el Segundo Archivo\r\n")
+			//lee archivo
+			c, err := ioutil.ReadFile("Archivo2.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strc := string(c) // convierto de byts a string
+    			fmt.Println(strc) // imprimo lo leido
 
          }///cierre if 2
 
@@ -56,6 +78,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout.Close()
 			fout.WriteString("Este es el Pirmer Archivo\r\n") 
+			//lee archivo
+			b, err := ioutil.ReadFile("Archivo1.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			str := string(b) // convierto de byts a string
+    			fmt.Println(str) // imprimo lo leido
          //creamos archivo2
          userFile2 := "Archivo2.txt"
 		fout2, err := os.Create(userFile2)		
@@ -65,6 +94,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout2.Close()
 			fout2.WriteString("Este es el Segundo Archivo\r\n")
+			//lee archivo
+			c, err := ioutil.ReadFile("Archivo2.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strc := string(c) // convierto de byts a string
+    			fmt.Println(strc) // imprimo lo leido
 			//creamos archivo3
          userFile3 := "Archivo3.txt"
 		fout3, err := os.Create(userFile3)		
@@ -74,6 +110,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout3.Close()
 			fout3.WriteString("Este es el Tercer Archivo\r\n")
+			//lee archivo
+			d, err := ioutil.ReadFile("Archivo3.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strd := string(d) // convierto de byts a string
+    			fmt.Println(strd) // imprimo lo leido
 
          }///cierre if 3
 
@@ -87,6 +130,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout.Close()
 			fout.WriteString("Este es el Pirmer Archivo\r\n") 
+			//lee archivo
+			b, err := ioutil.ReadFile("Archivo1.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			str := string(b) // convierto de byts a string
+    			fmt.Println(str) // imprimo lo leido
          //creamos archivo2
          userFile2 := "Archivo2.txt"
 		fout2, err := os.Create(userFile2)		
@@ -96,6 +146,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout2.Close()
 			fout2.WriteString("Este es el Segundo Archivo\r\n")
+			//lee archivo
+			c, err := ioutil.ReadFile("Archivo2.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strc := string(c) // convierto de byts a string
+    			fmt.Println(strc) // imprimo lo leido
 			//creamos archivo3
          userFile3 := "Archivo3.txt"
 		fout3, err := os.Create(userFile3)		
@@ -105,6 +162,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout3.Close()
 			fout3.WriteString("Este es el Tercer Archivo\r\n")
+			//lee archivo
+			d, err := ioutil.ReadFile("Archivo3.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strd := string(d) // convierto de byts a string
+    			fmt.Println(strd) // imprimo lo leido
 
 			//creamos archivo4
          userFile4 := "Archivo4.txt"
@@ -115,6 +179,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout4.Close()
 			fout4.WriteString("Este es el Cuarto Archivo\r\n")
+			//lee archivo
+			e, err := ioutil.ReadFile("Archivo4.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			stre := string(e) // convierto de byts a string
+    			fmt.Println(stre) // imprimo lo leido
 
          }///cierre if 4
 
@@ -128,6 +199,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout.Close()
 			fout.WriteString("Este es el Pirmer Archivo\r\n") 
+			//lee archivo
+			b, err := ioutil.ReadFile("Archivo1.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			str := string(b) // convierto de byts a string
+    			fmt.Println(str) // imprimo lo leido
          //creamos archivo2
          userFile2 := "Archivo2.txt"
 		fout2, err := os.Create(userFile2)		
@@ -137,6 +215,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout2.Close()
 			fout2.WriteString("Este es el Segundo Archivo\r\n")
+			//lee archivo
+			c, err := ioutil.ReadFile("Archivo2.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strc := string(c) // convierto de byts a string
+    			fmt.Println(strc) // imprimo lo leido
 			//creamos archivo3
          userFile3 := "Archivo3.txt"
 		fout3, err := os.Create(userFile3)		
@@ -146,6 +231,12 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout3.Close()
 			fout3.WriteString("Este es el Tercer Archivo\r\n")
+			d, err := ioutil.ReadFile("Archivo3.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strd := string(d) // convierto de byts a string
+    			fmt.Println(strd) // imprimo lo leido
 
 			//creamos archivo4
          userFile4 := "Archivo4.txt"
@@ -156,6 +247,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout4.Close()
 			fout4.WriteString("Este es el Cuarto Archivo\r\n")
+			//lee archivo
+			e, err := ioutil.ReadFile("Archivo4.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			stre := string(e) // convierto de byts a string
+    			fmt.Println(stre) // imprimo lo leido
 
          //creamos archivo5
          userFile5 := "Archivo5.txt"
@@ -166,6 +264,13 @@ fmt.Print("Cantidad de Archivos que desea crear de 1 al 5  ") // solo un input
 		}
 		defer fout5.Close()
 			fout5.WriteString("Este es el Quinto Archivo\r\n")
+			//lee archivo
+			f, err := ioutil.ReadFile("Archivo5.txt") // Paso nombre de archivo
+    			if err != nil {
+        			fmt.Print(err)
+    			}
+    			strf := string(f) // convierto de byts a string
+    			fmt.Println(strf) // imprimo lo leido
 
 
          }///cierre if 5
