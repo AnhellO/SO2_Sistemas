@@ -24,6 +24,7 @@ type errorCustom struct {
 func main() {
     reader := bufio.NewReader(os.Stdin) // para capturar string
 
+    for {
     // Probando con la interface Errors de Go
     fmt.Print("Ingrese el Divisior\n") // solo un input
         texta, _ := reader.ReadString('\n') // capturar string
@@ -37,10 +38,13 @@ func main() {
    
     resultado, err := division(a, b)
     fmt.Printf("Resultado = %d\n", resultado)
+if(a ==0 && b==0){
+    break
+}
 
     if err != nil {
         fmt.Println(err)
     }
-
+}
     
 }
