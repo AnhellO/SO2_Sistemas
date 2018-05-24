@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+import "errors"
+
+
+func DivisionCero(valor1 float32, valor2 float32) (float32, error) {
+    if valor2 == 0 {
+        return 0, errors.New("No te pases, M es 0!")
+    }
+
+    return valor1 / valor2, nil;
+}
+
+func main() {
+    
+    var a, b float32
+    fmt.Scanf("%g %g", &a, &b)
+    
+    resultadoPositivo, err := DivisionCero(a, b)
+    fmt.Printf("%g ", resultadoPositivo)
+    
+    if err != nil {
+        fmt.Println(err)
+       }
+}
