@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var k int
+	var m, n int
+	var x, y int
+
+	var answer string
+
+	for i:= 0; i < k; i++ {
+	
+		if x < n && y < m {
+			answer = "SO"
+		} else if  x < n && y > m {
+			answer = "NO"
+		} else if  x > n && y > m {
+			answer = "NE"
+		} else if  x > n && y < m {
+			answer = "SE"
+		} else if x == n || y == m {		
+			answer = "DIVISA"
+		}
+		
+	}
+
+	fmt.Printf(answer)
+
+}
